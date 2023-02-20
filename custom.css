@@ -1,0 +1,20 @@
+.container{
+    max-width: 800px; /*set container width to 800px to reduce reading length*/
+    
+    
+}
+
+
+.navbar-expand-md .navbar-nav .nav-link{
+  padding-right: initial; /* move nav items in line with icon on RHS*/
+  color: white;
+}
+
+.collapse {
+    background-color:black;
+}
+
+.ps-0 {
+  text-align: center;
+  
+}
