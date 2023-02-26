@@ -20,14 +20,18 @@
 
 
   <body>
-    
+
+    <div class="container-fluid d-flex bg-image">
+      
 
 <!--Side navbar setup med or higher switch from column to row -->
 <div class="container d-flex flex-column flex-md-row">
+
     <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
-        <a href="./index.html">
-            <img src="./GKicon.png" alt="logo" width="100" height="110" /> <!--keep image ratio correct-->
-        </a>
+
+      <a href="./index.html" style="background-color: rgba(10, 14, 17, 0.164);">
+        <img src="./GKicon.png" alt="logo" width="120" height="110" /> <!--keep image ratio correct-->
+    </a>
         <!--Button to toggle navbar button-->
         <button  
             class="navbar-toggler"
@@ -43,13 +47,15 @@
 
 
         <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-            <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-md-end"> <!--Mobile first, so centered for smaller mobile then end/right for larger than med-->
+            <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-end"> <!--Mobile first, so centered for smaller mobile then end/right for larger than med-->
                 <li>
                     <a href="./index.html" class="nav-link btn-light" >Home</a> <!--1st navigation-->
                 </li>
+                <br/><br/>
                 <li>
                     <a href="#" class="nav-link btn-light" aria-current="page">About</a> 
                 </li>
+                <br/><br/>
                 <li>
                     <a href="./Contact.html" class="nav-link btn-light">Contact Me</a> 
                 </li>
@@ -59,10 +65,25 @@
 
 
     </nav>
-    <main class="ps-0 ps-md-5 flex-gro-1">
-        <h1>About me</h1>
-        <p>lkhfn lkjrng lkjenbf wogtij ;aodif ;eiklrjg ;oigrjb ;qoirkn vfo;ikn ;kloreg ;ldkfnb ;lekng</p>
+    <main class="ps-0 ps-md-9 flex-gro-1"> <!--guidance from stackoverflow.com for image next to text in 2 columns with bootstrap-->
+      <div class="row">
+        <div class="col-6 pt-5 ps-5">
+          <img src="./GKicon.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 pt-5 ps-5">
+          <h2 class="fs-1 fw-bold">Who am I?</h2>
+          <p class="fs-3 my-3 fw-bold">I have been a Senior Field Service Engineer for the past 13+ years troubleshooting multi-million Euro systems. 
+                                        I'm also a devoted family man with 3 adorable children full of joy and mischief!
+                                        In 2022 I decided I needed a new challenge in Life, so enrolled in the Full Stack Developer Course with <a href="https://www.learningpeople.com/uk/" style="color: rgb(231, 160, 28)
+                                        ;">Learning People.</a>  
+                                        I thrive on troubleshooting and resolving complex issues, so am thoroughly enjoying the challenges of Coding and Creation.
+                                        Please click on my icon links below to find out more and make contact!</p>
+        </div>
+    </div>
+        </div>
+      </div>
     </main>
+</div>
 </div>
 
 <footer class="bg-dark text-center text-white">

@@ -14,19 +14,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
 
-    <title>Side Navbar test</title>
+    <title>Gareth Keys Personal Portfolio</title>
 
 </head>
 
 
   <body>
     
+    <div class="container-fluid d-flex bg-image">
 
 <!--Side navbar setup med or higher switch from column to row -->
 <div class="container d-flex flex-column flex-md-row">
+  
+
     <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
-        <a href="./index.html">
-            <img src="./GKicon.png" alt="logo" width="100" height="110" /> <!--keep image ratio correct-->
+        <a href="./index.html" style="background-color: rgba(10, 14, 17, 0.164);">
+            <img src="./GKicon.png" alt="logo" width="120" height="110" /> <!--keep image ratio correct-->
         </a>
         <!--Button to toggle navbar button-->
         <button  
@@ -45,13 +48,15 @@
         <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
             <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-end"> <!--Mobile first, so centered for smaller mobile then end/right for larger than med-->
                 <li>
-                    <a href="#" class="nav-link btn-light">Home</a> <!--1st navigation-->
+                    <a href="./index.html" class="nav-link btn-light">Home</a> <!--1st navigation-->
                 </li>
+                <br/><br/>
                 <li>
                     <a href="./About.html" class="nav-link btn-light">About</a> 
                 </li>
+                <br/><br/>
                 <li>
-                    <a href="./Contact.html" class="nav-link btn-light" aria-current="page">Contact Me</a> 
+                    <a href="#" class="nav-link btn-light" aria-current="page">Contact Me</a> 
                 </li>
             </ul>
 
@@ -59,8 +64,9 @@
 
 
     </nav>
-    <main class="ps-0 ps-md-5 flex-gro-1"> <!--from Youtube Divenecector Bootstrap responsive contact form design-->
+    <main class="mx-auto" style="width:400px"> <!--from Youtube Divenecector Bootstrap responsive contact form design - switched from col to mx-auto for responsive spacing center-->
         <h1>Contact Me Form </h1>
+        <p style="font-weight:normal;">You can reach me anytime on <a href=mailto:gareth.keys@gmail.com>gareth.keys@gmail.com</a></p>
         <div class="form-area">
           <div class="row single-form g-0">
           
@@ -68,33 +74,33 @@
 
                 <form> <!--from get bootstrap website-->
                   <div class="mb-3">
-                    <label for="InputName" class="form-label">Your Name</label>
+                    <label for="InputName" class="form-label">Your Name:</label>
                     <input type="text" class="form-control" id="InputName" >
                   </div>
                   <div class="mb-3">
-                    <label for="InputPhoneNumber" class="form-label">Phone number (with country code)</label>
+                    <label for="InputPhoneNumber" class="form-label">Phone number (with country code):</label>
                     <input type="text" class="form-control" id="InputPhoneNumber" data-mtb-input-mask="+44 000-000-000" />
                   </div>
                   <div class="mb-3">
-                    <label for="InputEmail" class="form-label">Email Address</label>
+                    <label for="InputEmail" class="form-label">Email Address:</label>
                     <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
                   </div>
                   <div class="mb-3">
-                    <label for="InputMessage" class="form-label">Message</label>
+                    <label for="InputMessage" class="form-label">Message:</label>
                     <textarea class="form-control" id="InputMessage"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                
                 </form>
 
 
 
               </div>
             </div>
-            </div>
+            
           </div>
     </main>
-</div>
-<br/>
+    </div>
 
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->

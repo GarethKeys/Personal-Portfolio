@@ -1,20 +1,46 @@
-.container{
-    max-width: 800px; /*set container width to 800px to reduce reading length*/
-    
-    
+
+
+.bg-image{
+ background-image: url(./Mountains.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+
 }
 
 
 .navbar-expand-md .navbar-nav .nav-link{
   padding-right: initial; /* move nav items in line with icon on RHS*/
-  color: white;
+  color: rgb(226, 236, 80);
+  font-weight: bold;
+  font-size:  20px;
+  text-align: center;
+  
 }
 
+
 .collapse {
-    background-color:black;
+    background-color: rgba(11, 10, 14, 0.692);
 }
 
 .ps-0 {
   text-align: center;
   
+}
+
+.form-label {
+  display:block;
+  font-weight:bolder;
+  color: rgb(226, 236, 80);
+  text-decoration: underline;
+  
+}
+
+main{
+  display:block;
+  font-weight:bolder;
+  color: white;
+}
+
+h2{
+  text-decoration: underline;
 }
