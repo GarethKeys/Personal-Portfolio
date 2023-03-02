@@ -24,7 +24,7 @@
     <div class="container-fluid d-flex bg-image">
 
 <!--Side navbar setup med or higher switch from column to row -->
-<div class="container d-flex flex-column flex-md-row">
+<div class="container-fluid d-flex flex-column flex-md-row"> <!--container-fluid for navbar fully left in screen-->
   
 
     <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
@@ -65,8 +65,10 @@
 
     </nav>
     <main class="mx-auto"> <!--from Youtube Divenecector Bootstrap responsive contact form design - switched from col to mx-auto for responsive spacing center, removed width as stopped responsiveness-->
-        <h1>Contact Me Form </h1>
-        <p style="font-weight:normal;">You can reach me anytime on <a href=mailto:gareth.keys@gmail.com>gareth.keys@gmail.com</a></p>
+      <!--added mask with padding left, right and bottom-->
+      <div class="mask px-3 pb-3 text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(0, 0, 0, 0.384)"> 
+      <h1>Contact Me Form </h1>
+        
         <div class="form-area">
           <div class="row single-form g-0">
           
@@ -97,7 +99,7 @@
 
               </div>
             </div>
-            
+          </div>
           </div>
     </main>
     </div>

@@ -19,14 +19,20 @@
 
 
 .collapse {
-    background-color: rgba(11, 10, 14, 0.692);
+    background-color: rgba(0, 0, 0, 0.384);
 }
 
 .ps-0 {
   text-align: center;
-  
 }
 
+.img-thumbnail{
+  height:fit-content;
+}
+
+.mask{
+  padding-right:initial;
+}
 .form-label {
   display:block;
   font-weight:bolder;
@@ -36,11 +42,14 @@
 }
 
 main{
-  display:block;
-  font-weight:bolder;
+  display:inline-block;
+  font-weight:bold;
+  font-size:large;
   color: white;
 }
 
-h2, h1{
+h2, h1, h4{
   text-decoration: underline;
+  
 }
+

@@ -23,7 +23,7 @@
     <div class="container-fluid d-flex bg-image">
 
 <!--Side navbar setup med or higher switch from column to row -->
-<div class="container d-flex flex-column flex-md-row">
+<div class="container-fluid d-flex flex-column flex-md-row">
     <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
 
       <a href="./index.html" style="background-color: rgba(10, 14, 17, 0.164);">
@@ -62,16 +62,21 @@
 
 
     </nav>
-    <main class="mx-auto" style="text-align: center;">
+    
+    <main class="mx-auto">
         <br/><br/><br/>
-        <h1>WELCOME!!</h1>
-        <br/>
-        <p class="fs-3 my-3 fw-bold">I am a Web Developer based in a little city called Derry in Northern Ireland. <br/> 
-                                    Welcome to my personal Portfolio. <br/>
-                                    Please feel free to have a "wee" click around!<br/><br/>
-                                  
-                                    If you like what you see get in touch..</p>
+         <!--mask added behind text to standout from background image-->
+        <div class="mask text-light d-flex justify-content-center flex-md-column text-center" style="background-color: rgba(0, 0, 0, 0.384)">
+          <h2>Welcome!!</h2>
+          <p class="m-5">I am a Web Developer based in a little city called Derry in Northern Ireland. <br/> 
+            Welcome to my personal Portfolio. <br/>
+            Please feel free to have a "wee" click around!<br/><br/>
+          
+            If you like what you see get in touch..</p>
+        </div>
 
+        <br/>
+       
         <br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </main>
 </div>
