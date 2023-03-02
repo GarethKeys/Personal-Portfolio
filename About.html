@@ -25,7 +25,7 @@
       
 
 <!--Side navbar setup med or higher switch from column to row -->
-<div class="container d-flex flex-column flex-md-row">
+<div class="container-fluid d-flex flex-column flex-md-row">
 
     <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
 
@@ -67,26 +67,33 @@
     </nav>
     <main class="ps-0 ps-md-9 flex-gro-1"> <!--guidance from stackoverflow.com for image next to text in 2 columns with bootstrap-->
       <div class="row">
-        <div class="col-6 pt-5 ps-5">
+
+        <div class="col-md-7 py-5 px-5"> <!--added col-md-7 so columns responsive and merge into one column below 768px-->
+          <!--mask added behind text to standout from background image-->
+          <div class="mask text-light d-flex align-items-center flex-column" style="background-color: rgba(0, 0, 0, 0.384)"> 
+          
+            
+              <br/>
+              <h1>Who am I?</h1>
+              <p class="m-5">I have been a Senior Field Service Engineer for the past 13+ years troubleshooting multi-million Euro systems. <br/>
+                I'm also a devoted family man with 3 adorable children full of joy and mischief! <br/>
+                In 2022 I decided I needed a new challenge in Life, 
+                so enrolled in the Full Stack Developer Course with <a href="https://www.learningpeople.com/uk/" style="color: rgb(231, 160, 28)
+                ;">Learning People.</a>  <br/>
+                I thrive on troubleshooting and resolving complex issues, so am thoroughly enjoying the challenges of Coding and Creation. <br/><br/>
+                Please click on my icon links below to find out more and make contact!</p>
+            </div>
+          </div>
+
+        <div class="col-md-5 py-5 px-5"> <!--adjusted to col-md-5, so photo column smaller and responsive below 768px-->
           <img src="./Myself.jpg" class="img-thumbnail" alt="...">
-           
         </div>
-        <div class="col-6 pt-5 ps-5">
-          <h2 class="fs-1 fw-bold">Who am I?</h2>
-          <p class="fs-3 my-3 fw-bold">I have been a Senior Field Service Engineer for the past 13+ years troubleshooting multi-million Euro systems. 
-                                        I'm also a devoted family man with 3 adorable children full of joy and mischief!
-                                        In 2022 I decided I needed a new challenge in Life, 
-                                        so enrolled in the Full Stack Developer Course with <a href="https://www.learningpeople.com/uk/" style="color: rgb(231, 160, 28)
-                                        ;">Learning People.</a>  
-                                        I thrive on troubleshooting and resolving complex issues, so am thoroughly enjoying the challenges of Coding and Creation.
-                                        Please click on my icon links below to find out more and make contact!</p>
-        </div>
+      
     </div>
         </div>
-      </div>
+     
     </main>
-</div>
-</div>
+  </div>
 
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
