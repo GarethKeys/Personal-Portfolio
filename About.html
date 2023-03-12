@@ -12,27 +12,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 
     <title>Gareth Keys Personal Portfolio</title>
-
-</head>
-
+  </head>
 
   <body>
-
     <div class="container-fluid d-flex bg-image">
       
-
-<!--Side navbar setup med or higher switch from column to row -->
-<div class="container-fluid d-flex flex-column flex-md-row">
+    <!--Side navbar setup medium or higher switch from column to row -->
+    <div class="container-fluid d-flex flex-column flex-md-row">
 
     <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
 
       <a href="./index.html" style="background-color: rgba(10, 14, 17, 0.164);">
-        <img src="./images/gk icon.png" alt="logo" width="120" height="110" /> <!--keep image ratio correct-->
+        <img src="./images/gk icon.png" alt="logo" width="120" height="110" /> <!--keep image ratio correct for GK icon-->
     </a>
-        <!--Button to toggle navbar button-->
+        <!--Button to toggle navbar to button when less than 768px-->
         <button  
             class="navbar-toggler"
             type="button"
@@ -45,11 +40,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-            <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-end"> <!--Mobile first, so centered for smaller mobile then end/right for larger than med-->
+            <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-end"> <!--mobile first, so centered for smaller mobile device then end/right for larger than medium-->
                 <li>
-                    <a href="./index.html" class="nav-link btn-light" >Home</a> <!--1st navigation-->
+                    <a href="./index.html" class="nav-link btn-light" >Home</a> <!--vertical navigation bar-->
                 </li>
                 <br/><br/>
                 <li>
@@ -62,13 +56,13 @@
             </ul>
 
         </div>
-
-
     </nav>
-    <main class="ps-0 ps-md-9 flex-gro-1"> <!--guidance from stackoverflow.com for image next to text in 2 columns with bootstrap-->
+
+    <main class="ps-0 ps-md-9 flex-gro-1"> <!--guidance taken from stackoverflow.com for image next to text in 2 columns with bootstrap-->
       <div class="row">
 
-        <div class="col-md-7 py-5 px-5"> <!--added col-md-7 so columns responsive and merge into one column below 768px-->
+        <div class="col-md-7 py-5 px-5"> <!--added col-md-7 so columns responsive and merge into one column when device below 768px-->
+
           <!--mask added behind text to standout from background image-->
           <div class="mask text-light align-items-center flex-column" style="background-color: rgba(0, 0, 0, 0.384)"> 
           
@@ -76,8 +70,8 @@
               <p class="m-5">I have been a Senior Field Service Engineer for the past 13+ years troubleshooting multi-million Euro systems Worldwide. <br/>
                 I'm also a devoted family man with 3 adorable children full of joy and mischief! <br/>
                 In 2022 I decided I needed a new challenge in Life, 
-                so enrolled in the Full Stack Developer Course with <a href="https://www.learningpeople.com/uk/" style="color: rgb(231, 160, 28)
-                ;">Learning People.</a>  <br/>
+                so enrolled in the Full Stack Developer Course with <a href="https://www.learningpeople.com/uk/" style="color: rgb(231, 160, 28);">
+                  Learning People.</a>  <br/>
                 I thrive on troubleshooting and resolving complex issues, so am thoroughly enjoying the challenges of Coding and Creation. <br/><br/>
                 Please click on my icon links below to find out more and make contact!</p>
             </div>
@@ -88,64 +82,56 @@
         </div>
       
     </div>
-        </div>
-     
+    </div>
     </main>
   </div>
 
 <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
+    <!-- grid container -->
     <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
+      <!-- section: social media and contact options -->
       <section class="mb-4">
         
-        <!-- Phone -->
-        <a class="btn btn-outline-light btn-floating m-1" href="tel:+447767670789" role="button"
-          ><i class="fa fa-phone"></i
-        ></a>
-
+        <!-- phone -->
+        <a class="btn btn-outline-light btn-floating m-1" href="tel:+447767670789" role="button">
+          <i class="fa fa-phone"></i>
+        </a>
           
-        <!-- Email -->
+        <!-- email -->
         <a class="btn btn-outline-light btn-floating m-1" href="mailto:gareth.keys@gmail.com" role="button">
           <i class="fa fa-envelope"></i></a>
 
-             <!-- Resume -->
-             <a class="btn btn-outline-light btn-floating m-1" href="./documents/cv_garethkeys_nov2022.doc" role="button"
-             ><i class="fa fa-file"></i
-           > C.V.</a>
+        <!-- resume -->
+        <a class="btn btn-outline-light btn-floating m-1" href="./documents/cv_garethkeys_nov2022.doc" role="button">
+          <i class="fa fa-file"></i> C.V.</a>
 
-             <!-- Github using font awesome-->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GarethKeys" role="button"
-        ><i class="fa fa-github"></i
-      ></a>
+        <!-- Github using font awesome-->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GarethKeys" role="button">
+          <i class="fa fa-github"></i></a>
 
-          <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/gareth-keys-a90b8799/" role="button" 
-          ><i class="fa fa-linkedin"></i
-        ></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/gareth-keys-a90b8799/" role="button" >
+          <i class="fa fa-linkedin"></i></a>
   
-
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/gareth.keys.9/" role="button"
-          ><i class="fa fa-facebook-f"></i
-        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/gareth.keys.9/" role="button">
+          <i class="fa fa-facebook-f"></i></a>
       </section>
-      <!-- Section: Social media -->
+      <!-- section: social media and contact options-->
     </div>
-    <!-- Grid container -->
+    <!-- grid container -->
   
-    <!-- Copyright -->
+    <!-- added extra contact me link -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       
       <a href="mailto:gareth.keys@gmail.com"  style="color:rgb(226, 236, 80);font-weight: bold;">Contact me - Click to get in touch!</a>
     </div>
-    <!-- Copyright -->
+    <!-- added extra contact me link -->
   </footer>
 
     <!--Bootstrap JS including popper  CDN link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
   </body>
-
 
 </html>
