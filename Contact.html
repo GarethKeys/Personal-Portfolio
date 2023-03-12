@@ -17,18 +17,16 @@
   </head>
 
   <body>
-    
     <div class="container-fluid d-flex bg-image">
 
-    <!--Side navbar setup med or higher switch from column to row -->
+    <!--side navbar setup medium or higher switch from column to row -->
     <div class="container-fluid d-flex flex-column flex-md-row"> <!--container-fluid for navbar fully left in screen-->
   
-
     <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
         <a href="./index.html" style="background-color: rgba(10, 14, 17, 0.164);">
-            <img src="./images/gk icon.png" alt="logo" width="120" height="110" /> <!--keep image ratio correct-->
+            <img src="./images/gk icon.png" alt="logo" width="120" height="110" /> <!--keep image ratio correct for GK icon-->
         </a>
-        <!--Button to toggle navbar button-->
+        <!--button to toggle navbar to button when less than 768px-->
         <button  
             class="navbar-toggler"
             type="button"
@@ -41,11 +39,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-            <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-end"> <!--Mobile first, so centered for smaller mobile then end/right for larger than med-->
+            <ul class="navbar-nav w-100 d-flex flex-md-column text-center text-end"> <!--mobile first, so centered for smaller mobile device then end/right for larger than medium-->
                 <li>
-                    <a href="./index.html" class="nav-link btn-light">Home</a> <!--1st navigation-->
+                    <a href="./index.html" class="nav-link btn-light">Home</a> <!--vertical navigation bar-->
                 </li>
                 <br/><br/>
                 <li>
@@ -58,20 +55,18 @@
             </ul>
 
         </div>
-
-
     </nav>
-    <main class="mx-auto"> <!--from Youtube Divenecector Bootstrap responsive contact form design - switched from col to mx-auto for responsive spacing center, removed width as stopped responsiveness-->
+
+    <main class="mx-auto"> <!--from Youtube "Divinector" Bootstrap responsive contact form design - switched from col to mx-auto for responsive spacing center, removed width as stopped responsiveness-->
+      
       <!--added mask with padding left, right and bottom-->
       <div class="mask px-3 pb-3 text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(0, 0, 0, 0.384)"> 
       <h1 style="color: rgb(226, 236, 80)">Contact Me Form </h1> <br/>
         
         <div class="form-area">
           <div class="row single-form g-0">
-          
-                
 
-                <form> <!--from get bootstrap website-->
+                <form> <!--from "getbootstrap.com" website-->
                   <div class="mb-3">
                     <label for="InputName" class="form-label">Your Name:</label>
                     <input type="text" class="form-control" id="InputName" >
@@ -92,68 +87,59 @@
                 
                 </form>
 
-
-
-              </div>
-            </div>
+          </div>
+          </div>
           </div>
           </div>
     </main>
     </div>
 
 <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
+    <!-- grid container -->
     <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
+      <!-- section: social media -->
       <section class="mb-4">
 
-        <!-- Phone -->
-        <a class="btn btn-outline-light btn-floating m-1" href="tel:+447767670789" role="button"
-          ><i class="fa fa-phone"></i
-        ></a>
+        <!-- phone -->
+        <a class="btn btn-outline-light btn-floating m-1" href="tel:+447767670789" role="button">
+          <i class="fa fa-phone"></i></a>
 
-          
-        <!-- Email -->
+        <!-- email -->
         <a class="btn btn-outline-light btn-floating m-1" href="mailto:gareth.keys@gmail.com" role="button">
           <i class="fa fa-envelope"></i></a>
 
-             <!-- Resume -->
-             <a class="btn btn-outline-light btn-floating m-1" href="./documents/cv_garethkeys_nov2022.doc" role="button"
-             ><i class="fa fa-file"></i
-           > C.V.</a>
+       <!-- Resume -->
+        <a class="btn btn-outline-light btn-floating m-1" href="./documents/cv_garethkeys_nov2022.doc" role="button">
+          <i class="fa fa-file"></i> C.V.</a>
 
-             <!-- Github using font awesome-->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GarethKeys" role="button"
-        ><i class="fa fa-github"></i
-      ></a>
+       <!-- Github using font awesome-->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/GarethKeys" role="button">
+          <i class="fa fa-github"></i></a>
 
-          <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/gareth-keys-a90b8799/" role="button" 
-          ><i class="fa fa-linkedin"></i
-        ></a>
+       <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/gareth-keys-a90b8799/" role="button" >
+          <i class="fa fa-linkedin"></i></a>
   
+      <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/gareth.keys.9/" role="button">
+          <i class="fa fa-facebook-f"></i></a>
 
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/gareth.keys.9/" role="button"
-          ><i class="fa fa-facebook-f"></i
-        ></a>
       </section>
-      <!-- Section: Social media -->
+      <!-- section: social media -->
     </div>
-    <!-- Grid container -->
+    <!-- grid container -->
   
-    <!-- Copyright -->
+    <!-- added extra contact me link -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       
       <a href="mailto:gareth.keys@gmail.com" style="color:rgb(226, 236, 80);font-weight: bold;">Contact me - Click here to get in touch!</a>
     </div>
-    <!-- Copyright -->
+    <!-- added extra contact me link -->
   </footer>
 
     <!--Bootstrap JS including popper  CDN link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
   </body>
-
 
 </html>
