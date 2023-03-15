@@ -3,6 +3,7 @@
  background-image: url(../images/mountains.jpg);
   background-repeat: no-repeat;
   background-size:cover;
+  padding-bottom: 370px; /*added padding to push footer to bottom on desktop*/
 }
 
 .navbar-expand-md .navbar-nav .nav-link{
